@@ -1,0 +1,17 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.a
+
+# Precompiled Headers
+*.gch
+*.pch
+
+**/.DS_Store
+**/.idea
+**/.vscode
