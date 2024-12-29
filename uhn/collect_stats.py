@@ -5,7 +5,7 @@ from mio.env import *
 from mio.stats import *
 import mio.model as model
 
-STATS_PATH = '/home/midhul/membw-eval'
+STATS_PATH = '~/chunk/git/git-own/LLC/membw-eval'
 
 def expand_ranges(x):
     result = []
