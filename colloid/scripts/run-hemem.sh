@@ -4,17 +4,17 @@
 # Make sure /dev/dax devices are setup and HeMem + Hoard libraries are compiled
 # TODO: Make sure to run run_perf.sh script from hemem directory in background
 # Dump of command lines from example run
-# sudo LD_LIBRARY_PATH=/home/midhul/hemem/src:/home/midhul/hemem/Hoard/src LD_PRELOAD=/home/midhul/hemem/src/libhemem.so ./gups-r 4
+# sudo LD_LIBRARY_PATH=/home/zjq/hemem/src:/home/zjq/hemem/Hoard/src LD_PRELOAD=/home/zjq/hemem/src/libhemem.so ./gups-r 4
 # sudo python3 -m mio ezzz --ant_cpus 19,23,27 --ant_num_cores 3 --ant_mem_numa 3 --ant stream --ant_writefrac 50 --ant_inst_size 64 --ant_duration 10000
 # sudo ./run_perf.sh
 
 config=$1
-gups_path=/home/midhul/colloid/apps/gups
-mio_path=/home/midhul/mio-colloid
-record_path=/home/midhul/colloid/colloid-stats
-stats_path=/home/midhul/membw-eval
-lib_path="/home/midhul/hemem/src:/home/midhul/hemem/Hoard/src"
-hemem_lib="/home/midhul/hemem/src/libhemem.so"
+gups_path=/home/zjq/colloid/apps/gups
+mio_path=/home/zjq/mio-colloid
+record_path=/home/zjq/colloid/colloid-stats
+stats_path=/home/zjq/membw-eval
+lib_path="/home/zjq/hemem/src:/home/zjq/hemem/Hoard/src"
+hemem_lib="/home/zjq/hemem/src/libhemem.so"
 gups_workload=$2
 gups_cores=4
 stream_num_cores=3

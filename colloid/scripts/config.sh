@@ -1,8 +1,8 @@
 
 # Configs
 
-stats_path=/home/midhul/membw-eval
-gapbs_path=/home/midhul/gapbs
-silo_path=/home/midhul/silo
-cachelib_path=/home/midhul/CacheLib
-memtis_path=/home/midhul/memtis
+stats_path=/home/zjq/membw-eval
+gapbs_path=/home/zjq/gapbs
+silo_path=/home/zjq/silo
+cachelib_path=/home/zjq/CacheLib
+memtis_path=/home/zjq/memtis

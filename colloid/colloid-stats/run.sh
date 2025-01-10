@@ -23,11 +23,11 @@ for i in 8 4 2 1; do
     for lmem in 24576 19661 14746 9830 4915; do
         echo "Running $config_rw-cores$i-lmem$lmem"
         eatmem=$(($local_capacity_mib-$lmem))
-        insmod /home/midhul/colloid/tpp/memeater/memeater.ko sizeMiB=$eatmem;
+        insmod /home/zjq/colloid/tpp/memeater/memeater.ko sizeMiB=$eatmem;
         cat /sys/devices/system/node/node3/meminfo | grep "MemFree";
-        /home/midhul/colloid/apps/gups/gups-rw $i &
+        /home/zjq/colloid/apps/gups/gups-rw $i &
         pid_gups=$!;
-        taskset -c 0 /home/midhul/colloid/colloid-stats/record_stats > /home/midhul/membw-eval/$config_rw-cores$i-lmem$lmem.stats.txt 2>&1 &
+        taskset -c 0 /home/zjq/colloid/colloid-stats/record_stats > /home/zjq/membw-eval/$config_rw-cores$i-lmem$lmem.stats.txt 2>&1 &
         pid_stats=$!;
         sleep 1000;
         killall record_stats;
@@ -47,11 +47,11 @@ for i in 8 4 2 1; do
     for lmem in 24576 19661 14746 9830 4915; do
         echo "Running $config_r-cores$i-lmem$lmem"
         eatmem=$(($local_capacity_mib-$lmem))
-        insmod /home/midhul/colloid/tpp/memeater/memeater.ko sizeMiB=$eatmem;
+        insmod /home/zjq/colloid/tpp/memeater/memeater.ko sizeMiB=$eatmem;
         cat /sys/devices/system/node/node3/meminfo | grep "MemFree";
-        /home/midhul/colloid/apps/gups/gups-r $i &
+        /home/zjq/colloid/apps/gups/gups-r $i &
         pid_gups=$!;
-        taskset -c 0 /home/midhul/colloid/colloid-stats/record_stats > /home/midhul/membw-eval/$config_r-cores$i-lmem$lmem.stats.txt 2>&1 &
+        taskset -c 0 /home/zjq/colloid/colloid-stats/record_stats > /home/zjq/membw-eval/$config_r-cores$i-lmem$lmem.stats.txt 2>&1 &
         pid_stats=$!;
         sleep 1000;
         killall record_stats;

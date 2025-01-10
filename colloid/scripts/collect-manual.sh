@@ -1,10 +1,10 @@
 #!/bin/bash
 
 config="hugepageslat-manual-gupsrw"
-gups_path=/home/midhul/colloid/apps/gups
-mio_path=/home/midhul/mio-colloid
-record_path=/home/midhul/colloid/colloid-stats
-stats_path=/home/midhul/membw-eval
+gups_path=/home/zjq/colloid/apps/gups
+mio_path=/home/zjq/mio-colloid
+record_path=/home/zjq/colloid/colloid-stats
+stats_path=/home/zjq/membw-eval
 
 echo "App Throughput, no background traffic"
 for x in 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1; do

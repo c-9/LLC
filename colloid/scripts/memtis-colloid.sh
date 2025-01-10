@@ -1,11 +1,11 @@
 #!/bin/bash
 
 config=$1
-# gups_path=/home/midhul/colloid/apps/gups
-mio_path=/home/midhul/mio
-record_path=/home/midhul/colloid/colloid-stats
-stats_path=/home/midhul/membw-eval
-colloidmon_path=/home/midhul/memtis/colloid-mon
+# gups_path=/home/zjq/colloid/apps/gups
+mio_path=/home/zjq/mio
+record_path=/home/zjq/colloid/colloid-stats
+stats_path=/home/zjq/membw-eval
+colloidmon_path=/home/zjq/memtis/colloid-mon
 # gups_workload=$2
 # gups_cores=4
 # stream_num_cores=3

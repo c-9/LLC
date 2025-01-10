@@ -6,10 +6,10 @@
 # TODO: GUPS_HUGEPAGES is currently enabled
 
 config=$1
-gups_path=/home/midhul/colloid/apps/gups
-mio_path=/home/midhul/mio-colloid
-record_path=/home/midhul/colloid/colloid-stats
-stats_path=/home/midhul/membw-eval
+gups_path=/home/zjq/colloid/apps/gups
+mio_path=/home/zjq/mio-colloid
+record_path=/home/zjq/colloid/colloid-stats
+stats_path=/home/zjq/membw-eval
 gups_workload=$2
 gups_cores=4
 stream_num_cores=3
